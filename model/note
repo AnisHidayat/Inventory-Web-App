@@ -1,0 +1,29 @@
+note :
+
+1. kode barang jadikan otomatis 'OK'
+   buat dua jadi kode principle dan kode biasa 'OK'
+2. tambah tabel t_produk_grup yang nantinya link ke tabel product 'OK'
+3. rak di transaksi tidak harus diisi 'OK'
+
+
+20/5/2020
+
+1. transaksi tambahkan di search bisa scan berdasarkan produk id atau principle id
+2. advanced search bisa dicari tanpa produk id atau rack id
+3. saat SO, setelah pilih gudang, lokasi, rack, dan product id muncul saldo terakhir dan ada kolom qty SO, Selisih
+   contoh, 
+   parent header 
+   		g1, l1, r1 (kolom atas) 
+   detail 
+        productid, qty akhir                                    scan barcode, qty SO, selisih
+     	pr1, 10, diisi 7, -3 (kolom bawah, usahakan pakai grid) __________    ______
+     	pr2, 8, diisi 9, 1 (kolom bawah, usahakan pakai grid)	__________    ______
+   		Lb1, 3, diisi 3, 0										__________    ______
+
+   saat save, maka ditambahkan otomatis di history
+4. Saat di product, edit harus tampil scan default product id atau principle id
+   susunan:
+   product id,
+   pilih scan default product id atau principle id
+   kalau scan default product id maka otomatis principle id sama dg product id, kalau principle id sdh terisi dan berbeda harus ada warning sblm di replace
+5. GRUP PRODUCT GANTI JADI DROPDOWNLIST

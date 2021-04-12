@@ -1,0 +1,45 @@
+20/5/2020
+
+1. transaksi tambahkan di search bisa scan berdasarkan produk id atau principle id 'OK'
+2. advanced search bisa dicari tanpa produk id atau rack id 'OK'
+3. saat SO, setelah pilih gudang, lokasi, rack, dan product id muncul saldo terakhir dan ada kolom qty SO, Selisih
+   contoh, 
+   parent header 
+   		g1, l1, r1 (kolom atas) 
+   detail 
+        productid, qty akhir                                    scan barcode, qty SO, selisih
+     	pr1, 10, diisi 7, -3 (kolom bawah, usahakan pakai grid)   __________    ______
+     	pr2, 8, diisi 9, 1 (kolom bawah, usahakan pakai grid)   	__________    ______
+   		Lb1, 3, diisi 3, 0							                  		  	__________    ______
+
+   saat save, maka ditambahkan otomatis di history
+4. Saat di product, edit harus tampil scan default product id atau principle id
+   susunan:
+   product id,
+   pilih scan default product id atau principle id
+   kalau scan default product id maka otomatis principle id sama dg product id, kalau principle id sdh terisi dan berbeda harus ada warning sblm di replace 'OK'
+5. GRUP PRODUCT GANTI JADI DROPDOWNLIST 'OK'
+
+===========================================================================================================================
+
+Project ini dimulai pada 15/04/2020
+
+no 1 udah oke. mantap slur 29/05/2020
+no 5 udah oke. gampang
+no 2 udah oke. yoi 01/06/2020
+no 4 udah oke. mantap slur 10/06/2020
+
+21/05/2020
+no 1 udah dibuatkan form search menggunakan modal, search berdasarkan product id udah oke tinggal yg principle id yg belum 
+
+28/05/2020
+untuk no 4 di table nya kasih field 'scan' aja bro, biar ketauan scan pake id yg mana.
+
+29/05/2020
+no 1 udah oke. mantap slur
+no 4 tinggal warning message yg belum. lagi dikerjain belum kelar
+
+10/06/2020
+no 4 udah oke. mantap slur
+no 3 cuma bisa cari berdasarkan 1 parameter karena pake library JS nya cuma bisa pake 1 parameter doang
+PR slur pas input transaksi baru, id barang sama id principle nya ga masuk ke tabel
